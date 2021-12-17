@@ -14,7 +14,7 @@ job('Node.js Docker Example') {
     steps {
         dockerBuildAndPublish {
 			repositoryName('munawersheikh/docker-node-js-image-dsl')
-			registryCredentials('munawersheikh')
+			registryCredentials('dockerhub')
 			forcePull(false)
 			forceTag(false)
 			createFingerprints(false)
